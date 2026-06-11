@@ -11,7 +11,7 @@ class Chroncal < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/DouglasdeMoura/chroncal/releases/download/v0.2.4/chroncal_0.2.4_darwin_amd64.tar.gz"
-      sha256 "faec74bc326e9895347fc6229c9f616ec8d7689bd55b6cc3abacc6ff7097d4dd"
+      sha256 "22bfc4d6a0d7a4376b60da8bd951e9671b396b036c1081499ad88d9d74b90305"
 
       define_method(:install) do
         bin.install "chroncal"
@@ -19,7 +19,7 @@ class Chroncal < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/DouglasdeMoura/chroncal/releases/download/v0.2.4/chroncal_0.2.4_darwin_arm64.tar.gz"
-      sha256 "0c8291d539f78472ca014f1ec597f4df665ceffea8ee99d5855b06ff03901102"
+      sha256 "d75c2c56623fada23d24b87d94bfb4d8e4d5df80f1e8720bb2f3af8e0dc41d98"
 
       define_method(:install) do
         bin.install "chroncal"
@@ -30,21 +30,21 @@ class Chroncal < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/DouglasdeMoura/chroncal/releases/download/v0.2.4/chroncal_0.2.4_linux_amd64.tar.gz"
-      sha256 "41eb686e3e218333d7f1512b9e5ecd672e43f2af89a1543684ff15d868a06ead"
+      sha256 "f8fb099fd5a0d260c1c57e2ced1cb24181a04e816d57aaa9b5c6851a523cfc79"
       define_method(:install) do
         bin.install "chroncal"
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
       url "https://github.com/DouglasdeMoura/chroncal/releases/download/v0.2.4/chroncal_0.2.4_linux_armv6.tar.gz"
-      sha256 "34250faeec26d176331c42a8fa363bbfe8a44ebe9cea9d59e36210653cf0e573"
+      sha256 "4a62f78d22b4f68e45525dadaf70d044639947a2a87c088e31fbf3b9df2b24bd"
       define_method(:install) do
         bin.install "chroncal"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/DouglasdeMoura/chroncal/releases/download/v0.2.4/chroncal_0.2.4_linux_arm64.tar.gz"
-      sha256 "9bf7f0dc0bd3971c6af26c1d96843544907f48af29ce3ff877de25f135d3ea0a"
+      sha256 "734d1e9d20ec377b850f45585aab829b5982be7e793321c7c0515957d1871155"
       define_method(:install) do
         bin.install "chroncal"
       end
