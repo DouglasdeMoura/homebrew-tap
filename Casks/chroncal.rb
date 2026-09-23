@@ -35,7 +35,7 @@ cask "chroncal" do
 
   postflight_steps do
     on_macos do
-      run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{staged_path}}/chroncal"]
+      run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{staged_path}}/chroncal"], must_succeed: false
     end
   end
 
