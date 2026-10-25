@@ -10,25 +10,25 @@ cask "chroncal" do
     end
   end
 
-  version "0.17.1"
+  version "0.17.2"
 
   on_macos do
     on_arm do
-      sha256 "a0a908992c44aacd14ca20fce9aadbe27f33bef7d0c50f98e2e5bce6cab00a50"
+      sha256 "a03c3a197c0eccf97bccc88e0373e9e4006219f2b69bc567a4e6bf069f05a2d7"
       url "https://github.com/DouglasdeMoura/chroncal/releases/download/v#{version}/chroncal_#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "48deaea312329a38df82e82b6abc1585f7b366d7694e435a91edb3ebae71ac75"
+      sha256 "a3fbdd9c14ca1753b6093876a3a83ecfea9cec572d0b57eac1f7ef2da7b69279"
       url "https://github.com/DouglasdeMoura/chroncal/releases/download/v#{version}/chroncal_#{version}_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "34fae61b884f470f23348fb26da554237bb4cfe460b605341597c3a0b6aa2c29"
+      sha256 "069052a2bdf390dc919af6585f3bdf2323e2230c93b40b76ba552e49acd7042d"
       url "https://github.com/DouglasdeMoura/chroncal/releases/download/v#{version}/chroncal_#{version}_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "995aa2f80bb211e661a20e702366d11566646c1bba4d21ee44e18d60f3af4888"
+      sha256 "d82f35dd410065a0953422c04fca31bb4681225d7ac824ec32a821038f936571"
       url "https://github.com/DouglasdeMoura/chroncal/releases/download/v#{version}/chroncal_#{version}_linux_amd64.tar.gz"
     end
   end
